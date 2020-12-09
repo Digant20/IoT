@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema#",
+  "$id": "http://json-schema-example.com/schemas/json-schema-example.json",
+  "type": "object",
+  "title": "IoT",
+  "description": "IoT information",
+  "additionalProperties": true,
+  "required": ["firstName", "mobile", "email"],
+  "properties": {
+    "firstName": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 20,
+      "description": "First name of the user"
+    },
+    "lastName": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 30,
+      "description": "Last name of the user"
+    },
+    "mobile": {
+      "type": "integer",
+      "minLength": 1,
+      "maxLength": 11,
+      "description": "User's mobile number"
+    },
+    "email": {
+      "type": "string",
+      "minLength": 3,
+      "maxLength": 30,
+      "format": "email",
+      "description": "email of the user"
+    }
+    
+    
+    }
+}
